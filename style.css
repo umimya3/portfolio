@@ -1,0 +1,23 @@
+body {
+  background-color: #E0F7FA; /* 薄い水色 */
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.main section {
+  margin-bottom: 20px;
+}
+
+.main img {
+  max-width: 100%;
+  height: auto;
+}
