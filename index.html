@@ -2,20 +2,39 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>サンプルサイト</title>
-    <link rel="stylesheet" href="style.css">
+    <title>項目のリスト</title>
+    <style>
+        .container {
+            width: 80%; /* 必要に応じて幅を調整 */
+            margin: 0 auto; /* 中央揃え */
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f0f0f0; /* 背景色 */
+            margin-bottom: 10px; /* 項目間の余白 */
+            padding: 10px;
+            border-radius: 5px; /* 角丸デザイン */
+        }
+
+        /* 必要に応じて追加スタイル */
+    </style>
 </head>
 <body>
-    <header>
-        <img src="header-image.jpg" alt="ヘッダー画像">
-    </header>
-    <div class="content">
-        <div class="card">
-            <img src="movie1.jpg" alt="映画1">
-            <h3>映画タイトル1</h3>
-            <p>映画の説明...</p>
+    <div class="container">
+        <div class="item">
+            <a href="report01.html">
+                <img src="report01.jpg" alt="記事01">
+            </a>
         </div>
-        <!-- 複数のカードを追加... -->
+    <div class="container">
+        <div class="item">
+            <a href="report02.html">
+                <img src="report02.jpg" alt="記事02">
+            </a>
+        </div>
+        <div class="item">項目 3</div>
+        <div class="item">項目 4</div>
     </div>
 </body>
 </html>

@@ -40,3 +40,17 @@ header img {
 .card p {
     font-size: 0.9em;
 }
+
+.container {
+    width: 80%; /* 必要に応じて幅を調整 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px;
+}
+
+.item {
+    background-color: #f0f0f0; /* 背景色 */
+    margin-bottom: 10px; /* 項目間の余白 */
+    padding: 10px;
+    border-radius: 5px; /* 角丸デザイン */
+}
+
