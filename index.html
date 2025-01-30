@@ -3,15 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>2024年度ポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
         .centered {
-            text-align: center; /* テキストを中央揃えにする */
-            width: 80%; /* コンテナーの幅を指定 */
-            margin: 0 auto; /* 左右のマージンを自動に設定 */
+            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin: 2rem 0;
+            letter-spacing: 0.05em;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card h3 {
+            color: #1a237e;
+            font-size: 1.25rem;
+            padding: 1rem 1.5rem 0.5rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #546e7a;
+            padding: 0 1.5rem 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        p {
+            color: #546e7a;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #78909c;
+            margin-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
-    
 </head>
 <body>
     <header>
@@ -19,71 +117,57 @@
     </header>
     
     <div class="centered">
-
-    <h1>2024年度 業務成果報告資料</h1>
-    </div>
-    
-    <div class="centered">
-    <p>2024年度の業務の内容をもとにポートフォリオを作成しました。項目の画像から詳細事項を見ることができます。</p>
+        <h1>2024年度 業務成果報告資料</h1>
+        <p>2024年度の業務の内容をもとにポートフォリオを作成しました。項目の画像から詳細事項を見ることができます。</p>
     </div>
     
     <div class="content">
-       <div class="card">
-            
+        <div class="card">
             <a href="report40.html">
-            <img src="report40.png" alt="記事40">
+                <img src="report40.png" alt="記事40">
             </a>
             <h3>生成AI関係</h3>
             <p>生成AIに関連する資料を示します。</p>
-
         </div>
-       <div class="card">
-            
+        <div class="card">
             <a href="report20.html">
-            <img src="report20.png" alt="記事02">
+                <img src="report20.png" alt="記事02">
             </a>
             <h3>プログラミング関係</h3>
             <p>pythonで作成したプログラムの内容です。</p>
-
-        </div> 
- 
+        </div>
         <div class="card">
-            
             <a href="report10.html">
-            <img src="report10.png" alt="記事01">
+                <img src="report10.png" alt="記事01">
             </a>
             <h3>3Dプリンタ関係</h3>
             <p>3Dプリンタに関連する資料や加工実績を載せています。</p>
         </div>
-
-
-       <div class="card">
-            
+        <div class="card">
             <a href="report30.html">
-            <img src="report30.png" alt="記事30">
+                <img src="report30.png" alt="記事30">
             </a>
             <h3>レーザー加工機関係</h3>
             <p>レーザー加工機での加工実績・成果を示します。</p>
-
         </div>
-
-
-
-       <div class="card">
-            
+        <div class="card">
+            <a href="report60.html">
+                <img src="report60.png" alt="記事50">
+            </a>
+            <h3>データ分析</h3>
+            <p>データ分析・機械学習関係の講座を受けたときの資料です。</p>
+        </div>
+        <div class="card">
             <a href="report50.html">
-            <img src="report50.png" alt="記事50">
+                <img src="report50.png" alt="記事50">
             </a>
             <h3>その他</h3>
             <p>他に分類できない項目を示します。</p>
-
         </div>
+    </div>
 
-        <!-- 複数のカードを追加... -->
-    </div>
     <div class="centered">
-    <p>最終更新日　2025年1月30日</p>
+        <p class="last-updated">最終更新日　2025年1月30日</p>
     </div>
-    
 </body>
 </html>
