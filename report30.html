@@ -4,35 +4,87 @@
     <meta charset="UTF-8">
     <title>レーザー加工機関係</title>
     <style>
-        body {
-            background-color: #141414;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
         }
 
         .container {
-            width: 80%;
-            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+         h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin: 2rem 0;
+            letter-spacing: 0.05em;
+             text-align: center;
+        }
+        
+        p {
+            color: #546e7a;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
 
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 8px;
+             display: block;
+             margin: 1.5rem auto;
         }
 
         .back-link {
-            display: block;
-            margin-top: 20px;
-            color: #fff;
+            display: inline-block;
+            margin-top: 2rem;
+            color: #1a237e;
             text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid #1a237e;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .back-link:hover {
+         .back-link:hover {
+             background-color: #1a237e;
+            color: white;
+        }
+        
+          a {
+            color: #1a237e;
+             text-decoration: none;
+        }
+        
+         a:hover{
             text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+           .container {
+            width: 95%;
+           padding: 1rem;
+           }
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -68,8 +120,10 @@
         <img src="report30_20.png" alt="3Dプリンター講習会">
 
     </div>
-        
+    
+    <div style="text-align: center;">
     <a class="back-link" href="index.html">戻る</a>
+    </div>
     
 </body>
 </html>
