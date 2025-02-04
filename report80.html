@@ -19,13 +19,25 @@
 
         .container {
             width: 90%;
-            max-width: 1200px;
+            max-width: 1200px; /*  ← 元のcontainerの max-width */
             margin: 2rem auto;
             padding: 2rem;
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+        /* 3Dモデル表示専用コンテナ */
+        .model-container {
+            width: 100%; /*  画面幅いっぱいに広げる */
+            /* max-width: none;  max-widthを削除してさらに広げる場合 */
+            margin: 2rem auto; /*  上下マージンはcontainerと同じ */
+            padding: 0 2rem; /*  左右paddingをcontainerと同じに */
+            background: white; /*  背景色をcontainerと同じに */
+            border-radius: 12px; /*  角丸をcontainerと同じに */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /*  影をcontainerと同じに */
+        }
+
 
          h1 {
             font-size: 2.5rem;
@@ -79,7 +91,6 @@
         /* 3Dモデル表示用のスタイル */
         model-viewer {
             width: 100%;
-            /* height: 400px;  元の高さ */
             height: 600px; /*  高さを大きくしました */
             min-height: 400px; /*  最低限の高さも設定 (レスポンシブ対応で小さくなりすぎないように) */
             background-color: #f0f0f0; /* 背景色はお好みで */
@@ -89,7 +100,7 @@
         }
 
         @media (max-width: 768px) {
-           .container {
+           .container, .model-container { /*  ←  .model-container も追記 */
             width: 95%;
            padding: 1rem;
            }
@@ -97,7 +108,6 @@
                 font-size: 2rem;
             }
              model-viewer {
-                /* height: 300px; 元の高さ */
                 height: 450px; /*  スマホなど ছোট画面での高さも大きくしました */
                 min-height: 300px; /*  最低限の高さも設定 (レスポンシブ対応で小さくなりすぎないように) */
             }
@@ -130,22 +140,23 @@
         <a href="3Dprinter101.pdf">3Dプリンター入門</a>
     </div>
 
-    <div class="container">
+    <!-- 3Dモデル表示部分を model-container で囲む -->
+    <div class="model-container">
         <h1>・画像から3Dモデルを作成 (Tripo)</h1>
         <p>Tripoというサイトで画像から3Dモデルを作成しました。以下の3Dモデルをご覧ください。</p>
 
         <section style="display: flex; flex-direction: column; align-items: center;">
             <div>
                 <h2>model10</h2>
-                <model-viewer src="model10.glb" alt="model10" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look"></model-viewer>
+                <model-viewer src="model10.glb" alt="model10" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look></model-viewer>
             </div>
              <div>
                 <h2>model20</h2>
-                <model-viewer src="model20.glb" alt="model20" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look"></model-viewer>
+                <model-viewer src="model20.glb" alt="model20" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look></model-viewer>
             </div>
              <div>
                 <h2>model30</h2>
-                <model-viewer src="model30.glb" alt="model30" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look"></model-viewer>
+                <model-viewer src="model30.glb" alt="model30" auto-rotate camera-controls shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look></model-viewer>
             </div>
         </section>
     </div>
