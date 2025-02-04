@@ -79,7 +79,9 @@
         /* 3Dモデル表示用のスタイル */
         model-viewer {
             width: 100%;
-            height: 400px; /* 高さはお好みで調整してください */
+            /* height: 400px;  元の高さ */
+            height: 600px; /*  高さを大きくしました */
+            min-height: 400px; /*  最低限の高さも設定 (レスポンシブ対応で小さくなりすぎないように) */
             background-color: #f0f0f0; /* 背景色はお好みで */
             border-radius: 8px;
             margin: 1.5rem auto;
@@ -95,7 +97,9 @@
                 font-size: 2rem;
             }
              model-viewer {
-                height: 300px; /* 高さはお好みで調整してください */
+                /* height: 300px; 元の高さ */
+                height: 450px; /*  スマホなど ছোট画面での高さも大きくしました */
+                min-height: 300px; /*  最低限の高さも設定 (レスポンシブ対応で小さくなりすぎないように) */
             }
         }
     </style>
